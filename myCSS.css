@@ -1,0 +1,221 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+}
+
+
+.header{
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 30px;
+	padding-left: 40px;
+	height: 100px;
+	z-index: 1000;
+	
+}
+.wrapper-filter, .wrapper-sort{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.filter{
+	padding-left: 20px;
+}
+
+.filter>label{
+	margin-right: 2px;
+}
+
+.sort{
+	padding-left: 20px;
+}
+
+.onsort{
+
+}
+
+.wrapper-sort{
+
+}
+
+
+
+
+
+
+
+
+.main{
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper-galery{
+	height: 100%;
+	width: 70%;
+	margin: 0 auto;
+}
+/*.galery{
+	border: 1px solid black;
+}
+
+.galery__item{
+	border: 1px solid green;
+}
+
+.galery__item__product,
+.galery__item__desc{
+	border: 1px solid red;
+}
+*/
+.galery{
+	width: 100%;
+	
+
+	display: flex;
+	flex-direction: column;galery__item
+}
+
+.galery__item{
+	width: 100%;
+	
+	height: 200px;
+	margin-bottom: 10px;
+
+	display: none;
+	justify-content: space-around;
+
+}
+
+.favorite > .galery__item__product > .galery__item__product__favorites_add_icon{
+	background-image: url(https://www.avito.st/s/cc/resources/8a6950657d55.svg);
+}
+
+
+
+.visible{
+	display: flex;
+}
+
+.galery__item__product,
+.galery__item__desc{
+	height: 100%;
+	width: 300px;
+	position: relative;
+	display: flex;
+	flex-direction: column;	
+}
+
+
+.galery__item__product__wrapper__image{
+	height: 90%;
+	width: 200px;
+	position: relative;
+
+
+}
+.galery__item__product__image{
+	height: 90%;
+	width: 200px;
+	object-fit: cover;
+	
+	align-self: center;
+}
+
+.galery__item__product__favorites_add_icon{
+	position: absolute;
+	top: 10px;
+	left: 160px;
+	background-image: url(https://www.avito.st/s/cc/resources/b127d52fdfb0.svg);
+	width: 36px;
+	height: 36px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.favorites_add_icon_active{
+	background-image: url(https://www.avito.st/s/cc/resources/8a6950657d55.svg);
+}
+
+
+.galery__item__product__favorites_add_icon:hover::after {
+
+	width: 320%;
+    content: 'добавить в избранное'; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 10%; top: 70%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 2px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+}
+
+.galery__item__product__quantity_image{
+	height: 10%;
+	width: 200px;
+			
+	text-align: center;
+	align-self: center;
+}
+
+.galery__item__desc{
+
+}
+.galery__item__desc__title{
+
+	font-size: 1em;
+	font-weight: bold;
+	color: #0091d9;
+	
+}
+.galery__item__desc__price{
+	max-width: 150px;
+	font-weight: bold;
+	
+	
+	
+	color: black;
+}
+.galery__item__desc__seller{
+
+}
+.galery__item__desc__seller__name{
+	font-size: 1em;
+	
+}
+.galery__item__desc__seller__rating{
+	
+	
+}
+/*
+<div class="galery__item">
+
+	<div class="galery__item__product">
+		<img class="galery__item__product__image" src="" alt="">
+		<div class="galery__item__product__quantity_image"></div>	
+	</div>
+
+	<div class="galery__item__desc">
+		<div class="galery__item__product__title"></div>
+		<div class="galery__item__product__price"></div>
+		<div class="galery__item__desc__seller">
+			<div class="galery__item__desc__seller__name"></div>
+			<div class="galery__item__desc__seller__rating"></div>
+		</div>
+	</div>
+	
+</div>*/

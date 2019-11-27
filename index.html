@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>avito_lite</title>
+
+	<link rel="stylesheet" type="text/css" href="myCSS.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<form class="wrapper-filter">
+			<div class="filter">
+				<label for="filterByCategory">Категории</label>
+					<select id="filterByCategory" name="filterByCategory">
+						<option>all</option>
+						<option>immovable</option>
+						<option>cameras</option>
+						<option>auto</option>
+						<option>laptops</option>
+					</select>	
+			</div>
+			
+			<div class="filter">	
+				<label for="filterByMinPrice">Цена с</label>
+				<input id ="filterByMinPrice" name="filterByMinPrice">
+			</div>
+			
+			<div class="filter">	
+				<label for="filterByMaxPrice">до</label>
+				<input id ="filterByMaxPrice" name="filterByMaxPrice">
+			</div>
+
+			<div class="filter">
+				<label for="filterByFavorite">Избранное</label>
+					<select id="filterByFavorite" name="filterByFavorite">
+						<option>показать все</option>
+						<option>только избранное</option>
+					</select>	
+			</div>
+			
+			
+	    </form>
+
+	    <form class="wrapper-sort">	
+	    	<div class="sort">	
+	    		<label for="sortByPrice">Сортировать по цене</label>
+	    		<input type="checkbox" id="sortByPrice" name="sortByPrice">
+	    	</div>
+
+	    	<div class="sort">	
+	    		<label for="sortByRating">Сортировать по популярности</label>
+	    		<input type="checkbox" id="sortByRating" name="sortByRating">
+	    	</div>
+
+	    </form>
+
+
+
+	</header>
+	<main class="main">
+		<div class="wrapper-galery">
+			<div class="galery" id="galery">
+
+			</div>
+		</div>
+
+	</main>
+
+
+</body>
+
+<script type="text/javascript" src="javascript.js">
+
+</script>
+
+</html>
+
+
